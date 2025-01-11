@@ -31,7 +31,7 @@
     <div id="notification" class="notification">
     </div>
 
-    <script>
+ <script src="index.js">
         setTimeout(() => {
             document.querySelector('.loader').style.display = 'none';
             document.querySelector('.login-container').style.display = 'block';
@@ -53,6 +53,7 @@
             notification.style.display = 'block';
             setTimeout(() => {
                 notification.style.display = 'none';
+                       </script>
                 window.location.href = "mainpage.html";
             }, 3000);
         }
