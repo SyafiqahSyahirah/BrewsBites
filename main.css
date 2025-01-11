@@ -1,0 +1,27 @@
+/* main.css - Fail utama yang mengimport fail lain */
+
+/* Mengimport style1.css */
+@import url('loginstyle.css');
+
+/* Mengimport style1.css */
+@import url('MAINPAGERESTAURANT.css');
+
+/* Mengimport style2.css */
+@import url('MEETOURTEAM.css');
+
+/* Mengimport style3.css */
+@import url('MENU.css');
+
+/* Mengimport style3.css */
+@import url('CUSTOMER\ REVIEW.css');
+
+/* Mengimport style3.css */
+@import url('RESERVATIONSTYLE.css');
+
+/* Mengimport style3.css */
+@import url('CONTACTUS.css');
+
+/* Mengimport style3.css */
+@import url('OURGALLERY.css');
+
+
