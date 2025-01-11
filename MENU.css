@@ -1,0 +1,257 @@
+
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+outline: none;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+background-color: rgba(255, 251, 27, 0.253);
+padding: 20px;
+font-family: Arial;
+}
+
+.menu-container {
+  background: #fff;
+  color: #333;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  font-family: Candara;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  margin-top: 70px;
+}
+
+/* Additional styling */
+.menu-container h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: gray;
+  margin-top: -80px;
+}
+.menu-container p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.menu-container:hover {
+  background-color: rgba(255, 255, 0, 0.288);
+  }
+
+ol {
+  counter-reset: menu-counter;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ol li {
+  counter-increment: menu-counter;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background:#f9f9f9;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.158);
+}
+ol li:last-child {
+  margin-bottom: 0;
+}
+ol li::before {
+  content: counter(menu-counter);
+  font-size: 1.5em;
+  font-weight: bold;
+  color: gray;
+  margin-right: 15px;
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.menu-item-name {
+  flex-grow: 1;
+  font-weight: bold;
+}
+.menu-item-icon {
+  font-size: 1.2em;
+  margin-left: 10px;
+  color: #ff7e5f;
+}
+
+/* Center website */
+.main {
+max-width: 1000px;
+margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  font-family: Impact;
+  padding-top: 80px; /* Memberi jarak yang lebih besar dari navbar */
+}
+
+h2 {
+font-family:'Lucida Sans';
+white-space: nowrap;
+overflow: hidden;
+animation: typewriter 2s steps(13) infinite alternate,
+  blink 800ms steps(13) infinite normal;
+border-right: 5px solid black;
+}
+
+h3 {
+  text-align: 'Lucida Sans';
+}
+
+h4 {
+  text-align: center;
+  font-family: candara;
+  }
+  
+h5 {
+  text-align: center;
+  font-family: candara;
+  }
+  
+p {
+  text-align: center;
+  font-size: 16px;
+  font-family: candara;
+  }
+  
+i {
+  font-size: 12px;
+  }
+
+@keyframes typewriter {
+from {
+   width: 0%;
+   }
+
+to {
+   width: 50%;
+   }
+}
+
+@keyframes blink {
+from {
+  border-color: black;
+    }
+
+      to {
+          border-color: transparent;
+      }
+  }
+
+.row {
+margin: 10px -16px;
+}
+
+.row,
+.row > .column {
+padding: 8px;
+}
+
+.column {
+float: left;
+width: 33.33%;
+display: none; 
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.content {
+background-color: white;
+padding: 10px;
+}
+
+.show {
+display: block;
+}
+
+.btn {
+border: none;
+border-radius: 5px;
+padding: 12px 20px;
+position: relative;
+background-color: rgba(255, 251, 27, 0.836);
+cursor: pointer;
+margin-top: 400px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 18px;
+}
+
+.ribbon {
+  width: 90px;
+  font-size: 14px;
+  padding: 4px;
+  position: absolute;
+  right: -25px;
+  top: -12px;
+  text-align: center;
+  border-radius: 25px;
+  transform: rotate(20deg);
+  background-color: #ff9800;
+  color: white;
+}
+
+.btn:hover {
+background-color: gainsboro;
+}
+
+.btn.active {
+background-color: rgba(255, 251, 27, 0.836);
+color: black;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 16px;
+}
+
+
+nav {
+  background-color: rgba(255, 251, 27, 0.836);
+  display: flex; /* Use flexbox for proper alignment */
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center the links vertically */
+  padding: 3px; /* Add padding for better spacing */
+  position: relative; /* Ensure it sits above other elements */
+  z-index: 5; /* Ensure the navigation stays on top of the hero image */
+  width: 100%;  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+nav a {
+  color: black;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: impact;
+}
+
+nav a:hover {
+  background-color: white;
+  color: rgb(109, 106, 106);
+}

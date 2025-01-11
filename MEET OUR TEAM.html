@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>MEET OUR TEAM</title>
+  <link rel="stylesheet" href="MEETOURTEAM.css">
+    
+  <style>
+  
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(255, 251, 27, 0.836);
+      padding: 10px;
+    }
+  
+    nav a {
+      color: black;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+  
+  
+    nav .menu {
+      display: flex;
+    }
+  
+    nav .hamburger {
+      display: none;
+      font-size: 30px;
+      color: black;
+      cursor: pointer;
+    }
+  
+    @media screen and (max-width: 768px) {
+      nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+      }
+  
+      nav .menu.active {
+        display: flex;
+      }
+  
+      nav a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid #444;
+      }
+  
+      nav .hamburger {
+        display: block;
+      }
+    }
+  </style>
+  </head>
+
+
+
+<body>
+
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="menu">
+      <a href="MAIN PAGE RESTAURANT.html">ABOUT US</a>
+      <a href="MENU.html">MENU</a>
+      <a href="RESERVATION.html">RESERVATION</a>
+      <a href="CONTACT US.html">CONTACT US</a>
+      <a href="OUR GALLERY.html">GALLERY</a>
+    </div>
+  </nav>
+
+<header>
+<h1 class="typewriter">Meet Our Team</h1>
+<p style="font-family: candara; font-size: 24px;">Our talented and beautiful team members are here to serve you with passion and commitment!</p>
+</header>
+
+<section class="team-section">
+<div class="team-member fade-in">
+<img src="syafiqah syahirah.jpg" alt="Team Member 1">
+<div class="team-info">
+<h3>Syafiqah Syahirah</h3>
+<ul style="list-style-type:square;">
+<li><p>Founder</p></li>
+</ul>
+<p>I hope that my restaurant will always bring happiness to our customers.</p>
+<div class="social-icons">
+<a href="https://www.facebook.com/profile.php?id=61557513304598" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/syaherahh/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@baddaspika?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+</div>
+</div>
+
+<div class="team-member fade-in" style="animation-delay: 0.3s;">
+<img src="ummi kamalina.jpg" alt="Team Member 2">
+<div class="team-info">
+<h3>Ummi Kamalina</h3>
+<ul style="list-style-type:square;">
+<li><p>Co Founder</p></li>
+</ul>
+<p>My responsibility is to makesure that the financial flow of this restaurant is organize .</p>
+<div class="social-icons">
+<a href="https://www.facebook.com/share/19n9evcK5t/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/umi.kmlna/profilecard/?igsh=ejdnZHZvMWM0bjdi" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/share/19n9evcK5t/?mibextid=wwXIfr" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+</div>
+</div>
+
+<div class="team-member fade-in" style="animation-delay: 0.6s;">
+<img src="aisyah sofea.jpg" alt="Team Member 3">
+<div class="team-info">
+<h3>Aisyah Sofea</h3>
+<ul style="list-style-type:square;">
+<li><p>Barista</p></li>
+</ul>
+<p> My work is to ensure you get the best coffee you ever had & to make you cannot sleep because miss me. Ops sorry, my coffee.</p>
+<div class="social-icons">
+<a href="https://www.facebook.com/share/12D5uhuxpAq/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/aisyahsofe4/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@babysofea3" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+</div>
+</div>
+
+<div class="team-member fade-in" style="animation-delay: 0.6s;">
+<img src="lidya izana.jpg" alt="Team Member 4">
+<div class="team-info">
+<h3>Lidya Izana</h3>
+<ul style="list-style-type:square;">
+<li><p>Chef</p></li>
+</ul>
+<p>Serve wonderful & scrumptious food is my mision here. Hope you guys enjoy it. Love you!</p>
+<div class="social-icons">
+<a href="https://www.facebook.com/share/12D5uhuxpAq/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/lidyaizana/profilecard/?igsh=NzFrc2Z1NHpieWQ3" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@xxnanr?_t=ZS-8sm3owtRj4E&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+</div>
+</div>
+</section>
+<script>function toggleMenu() {
+  const menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
+}</script>
+
+</body>
+</html>

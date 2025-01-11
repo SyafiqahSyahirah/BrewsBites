@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head><title> Menu </title></head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<link rel="stylesheet" href="MENU.css">
+
+
+<style>
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(5px); }
+}
+
+.column img {
+  transition: transform 0.2s ease;
+}
+
+.column img:hover {
+  animation: shake 0.5s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+
+.shake {
+  animation: shake 0.5s ease; /* 0.5 seconds for the shaking effect */
+}
+
+
+  /* Style for the navigation bar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 251, 27, 0.836);
+    padding: 10px;
+  }
+
+  nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+
+  /* Menu links that will be hidden on mobile */
+  nav .menu {
+    display: flex;
+  }
+
+  /* Hamburger icon for mobile screens */
+  nav .hamburger {
+    display: none;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+  }
+
+  /* Media query for screens smaller than 768px (mobile) */
+  @media screen and (max-width: 768px) {
+    nav .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    nav .menu.active {
+      display: flex;
+    }
+
+    nav a {
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      border-top: 1px solid #444;
+    }
+
+    nav .hamburger {
+      display: block;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i> <!-- Hamburger icon -->
+    </div>
+    <div class="menu">
+      <a href="MAIN PAGE RESTAURANT.html">ABOUT US</a>
+      <a href="MENU.html">MENU</a>
+      <a href="RESERVATION.html">RESERVATION</a>
+      <a href="CONTACT US.html">CONTACT US</a>
+      <a href="OUR GALLERY.html">GALLERY</a>
+    </div>
+  </nav>
+
+<div class="main">
+
+<h1> OUR MENU 🍴</h1>
+<br>
+<hr>
+<br>
+
+<h2> Bean There, Brewed That ☕️⊹₊⟡⋆ </h2>
+<br>
+
+<div class="menu-container">
+  <h1>Top Seller Menu</h1>
+  <p>Discover our most-loved dishes, chosen by our customers!</p>
+  <ol>
+      <li>
+          <span class="menu-item-name"> Toffe Nut Caramel Latte </span>
+          <span class="menu-item-icon">☕️</span>
+      </li>
+      <li>
+          <span class="menu-item-name"> Nutella Coffee </span>
+          <span class="menu-item-icon">🍫☕️</span>
+      </li>
+      <li>
+          <span class="menu-item-name"> Matcha Strawberry </span>
+          <span class="menu-item-icon"> 🍵🍓</span>
+      </li>
+  </ol>
+  <br>
+</div>
+<br>
+
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('beverages')"> Beverages </button>
+  <button class="btn" onclick="filterSelection('desserts')"> Desserts </button>
+  <button class="btn" onclick="filterSelection('sidedish')"> Side Dishes <span class="ribbon"> Delicious !</span></button>
+</div>
+<br>
+
+
+
+<div class="row">
+    <div class="column beverages">
+      <div class="content">
+        <img src="COFFEE 1.jpg" alt="Beverages" style="width:100%">
+        <h4> Cookie Butter Latte </h4>
+        <br>
+        <i><p> A warm and creamy latte with the sweet, spiced flavor of cookie butter. Topped with cookie crumbs for a cozy treat </p></i>
+        <br>
+        <u><h5> RM 13 </h5></u>
+      </div>
+    </div>
+    <div class="column beverages">
+      <div class="content">
+      <img src="COFFEE 2.jpg" alt="Beverages" style="width:100%">
+        <h4> Toffee Nut Caramel Latte </h4>
+        <br>
+        <i><p>A rich and creamy with the nutty sweetness of toffee and a drizzle of caramel. Perfect for any moment.</p></i>
+        <br>
+        <u><h5> RM 14 </h5></u>
+      </div>
+    </div>
+    <div class="column beverages">
+      <div class="content">
+      <img src="COFFEE 3.jpg" alt="Beverages" style="width:100%">
+        <h4> Honey Lavender Macchiato </h4>
+        <br>
+        <i><p> A smooth and fragrant macchiato sweetened with honey and infused with a hint of lavender </p></i>
+        <br>
+        <u><h5> RM 15 </h5></u>
+      </div>
+    </div>
+    <div class="column beverages">
+      <div class="content">
+      <img src="COFFEE 4.jpg" alt="Beverages" style="width:100%">
+        <h4> Nutella Coffee </h4>
+        <br>
+        <i><p> A creamy coffee made with espresso, milk, and Nutella, creating a rich, chocolate-hazelnut flavor. </p></i>
+        <br>
+       <u><h5> RM 14 </h5></u>
+      </div>
+    </div>
+    <div class="column beverages">
+      <div class="content">
+      <img src="COFFEE 5.jpg" alt="Beverages" style="width:100%">
+        <h4> Hazelnut Latte </h4>
+        <br>
+        <i><p> Coffee infused with the nutty and sweet flavor of hazelnuts, typically used hazelnut syrup, creamer or flavored beans. </p></i>
+        <br>
+        <u><h5> RM 13 </h5></u>
+      </div>
+    </div>
+    <div class="column beverages">
+      <div class="content">
+      <img src="COFFEE 6.jpg" alt="Beverages" style="width:100%">
+        <h4> Cookie Mocha Latte </h4>
+        <br>
+        <i><p> A rich blend of espresso, steamed milk and cookie-flavored syrup, topped with whipped cream and chocolate chips. </p></i>
+        <br>
+        <u><h5> RM 15 </h5></u>
+      </div>
+    </div>
+    <div class="column beverages">
+      <div class="content">
+      <img src="MATCHA 1.jpg" alt="Beverages" style="width:100%">
+        <h4> Matcha Strawberry </h4>
+        <br>
+        <i><p>  A refreshing blend of creamy matcha green tea and sweet strawberry, creating flavorful drink perfect for any time of day. </p></i>
+        <br>
+        <u><h5> RM 16 </h5></u>
+      </div>
+    </div>
+    <div class="column beverages">
+      <div class="content">
+      <img src="MATCHA 2.jpg" alt="Beverages" style="width:100%">
+        <h4> Matcha Pandan Latte </h4>
+        <br>
+        <i><p>  A creamy blend of earthy matcha and aromatic pandan, mixed with milk for a rich, tropical, and slightly sweet flavor. </p></i>
+        <br>
+        <u><h5> RM 14 </h5></u>
+      </div>
+    </div>
+    <div class="column beverages">
+      <div class="content">
+      <img src="MATCHA 3.jpg" alt="Beverages" style="width:100%">
+        <h4> Matcha Latte </h4>
+        <br>
+        <i><p>  A creamy drink made with ground green tea powder (matcha) whisked into milk, flavor with a touch of natural sweetness. </p></i>
+        <br>
+        <u><h5> RM 13 </h5></u>
+      </div>
+    </div>
+    <div class="column beverages">
+      <div class="content">
+      <img src="CHOC 2.jpg" alt="Beverages" style="width:100%">
+        <h4> Iced Chocolate </h4>
+        <br>
+        <i><p>  A chilled drink made with chocolate powder, mixed with cold milk and ice, creating a rich, sweet chocolate flavor. </p></i>
+        <br>
+        <u><h5> RM 13 </h5></u>
+      </div>
+    </div>
+    <div class="column beverages">
+      <div class="content">
+      <img src="CHOC 1.jpg" alt="Beverages" style="width:100%">
+        <h4> Iced Marshmallow Chocolate </h4>
+        <br>
+        <i><p>  A chilled, creamy chocolate drink topped with fluffy marshmallows for a sweet, indulgent treat. </p></i>
+        <br>
+        <u><h5> RM 15 </h5></u>
+      </div>
+    </div>
+    <div class="column beverages">
+      <div class="content">
+      <img src="CHOC.jpg" alt="Beverages" style="width:100%">
+        <h4> Tiramisu Chocolate</h4>
+        <br>
+        <i><p> A chilled, creamy blend of chocolate and tiramisu flavors, topped with whipped cream and a dusting of cocoa for a rich. </p></i>
+        <br>
+        <u><h5> RM 12 </h5></u>
+      </div>
+    </div>
+    
+    <div class="column desserts">
+      <div class="content">
+        <img src="DESSERT 10.jpg" alt="Desserts" style="width:100%">
+        <h4> Mini Brownie Mousse </h4>
+        <br>
+        <i><p> A chocolate dessert featuring layers of fudgy brownie and silky chocolate mousse, topped with a whipped cream.</p></i>
+        <br>
+        <u><h5> RM 13 </h5></u>
+      </div>
+    </div>
+    <div class="column desserts">
+      <div class="content">
+      <img src="DESSERT 2.jpg" alt="Desserts" style="width:100%">
+        <h4> Chocolate Cromboloni </h4>
+        <br>
+        <i><p> A delightful pastry, filled with chocolate cream, featuring a fluffy texture and often dusted with a chocolate drizzle. </p></i>
+        <br>
+        <u><h5> RM 12 </h5></u>
+      </div>
+    </div>
+    <div class="column desserts">
+      <div class="content">
+      <img src="DESSERT 3.jpg" alt="Desserts" style="width:100%">
+        <h4> Tiramisu Cake </h4>
+        <br>
+        <i><p> A dessert layers of coffee-soaked sponge cake, creamy mascarpone filling,a dusting of cocoa powder for a indulgent treat. </p></i>
+        <br>
+        <h5> RM 14 </h5>
+      </div>
+    </div>
+    <div class="column desserts">
+      <div class="content">
+        <img src="DESSERT 4.jpg" alt="Desserts" style="width:100%">
+        <h4> Mixed Berry Almond Tart </h4>
+        <br>
+        <i><p> A buttery tart crust filled with almond cream and topped with a medley of fresh berries, combining nutty sweetness. </p></i>
+        <br>
+        <u><h5> RM 25 </h5></u>
+      </div>
+    </div>
+    <div class="column desserts">
+      <div class="content">
+      <img src="DESSERT 5.jpg" alt="Desserts" style="width:100%">
+        <h4> Fruit Tart </h4>
+        <br>
+        <i><p> A crisp pastry shell filled with creamy custard and topped with a colorful assortment of fresh fruits. </p></i>
+        <br>
+        <u><h5> RM 5 </h5></u>
+      </div>
+    </div>
+    <div class="column desserts">
+      <div class="content">
+      <img src="DESSERT 6.jpg" alt="Desserts" style="width:100%">
+        <h4> Mix Berries Waffle </h4>
+        <br>
+        <i><p> A golden, crispy waffle topped with a medley of fresh berries and drizzled with sweet syrup for a delightful, fruity treat. </p></i>
+        <br>
+        <u><h5> RM 16 </h5></u>
+      </div>
+    </div>
+    <div class="column desserts">
+      <div class="content">
+      <img src="DESSERT 7.jpg" alt="Desserts" style="width:100%">
+        <h4> Biscoff Stuffed Cookies </h4>
+        <br>
+        <i><p> Soft and chewy cookies with a gooey Biscoff cookie butter center, offering a sweet and caramelized flavor in every bite. </p></i>
+        <br>
+        <u><h5> RM 10 </h5></u>
+      </div>
+    </div>
+    <div class="column desserts">
+      <div class="content">
+      <img src="DESSERT 8.jpg" alt="Desserts" style="width:100%">
+        <h4> Red Velvet Cookies </h4>
+        <br>
+        <i><p> Soft, chewy cookies with a rich red velvet flavor, often topped with white chocolate chips. </p></i>
+        <br>
+        <u><h5> RM 10 </h5></u>
+      </div>
+    </div>
+    <div class="column desserts">
+      <div class="content">
+      <img src="DESSERT 9.jpg" alt="Desserts" style="width:100%">
+        <h4> Chocolate Eclairs </h4>
+        <br>
+        <i><p> A classic pastry filled with creamy custard, topped with a smooth layer of rich chocolate glaze. </p></i>
+        <br>
+        <u><h5> RM 16 </h5></u>
+      </div>
+    </div>
+    <div class="column desserts">
+      <div class="content">
+      <img src="DESSERT 1.jpg" alt="Desserts" style="width:100%">
+      <h4> Raspberry Cake </h4>
+      <br>
+      <i><p> A fluffy cake infused with the sweet and tangy flavor of fresh raspberries, often topped with cream or a fruity glaze. </p></i>
+      <br>
+      <u><h5> RM 16 </h5></u>
+    </div>
+  </div>
+  <div class="column desserts">
+    <div class="content">
+    <img src="DESSERT 11.jpg" alt="Desserts" style="width:100%">
+      <h4> Raspberry and Milk Choc Eclairs </h4>
+      <br>
+      <i><p> Light choux pastry filled with raspberry cream and topped with a smooth milk choc glaze for a sweet and tangy treat. </p></i>
+      <br>
+      <u><h5> RM 16 </h5></u>
+    </div>
+  </div>
+  <div class="column desserts">
+    <div class="content">
+    <img src="DESSERT 12.jpg" alt="Desserts" style="width:100%">
+      <h4> Strawberry Shortcake Trifles</h4>
+      <br>
+      <i><p> A layered dessert made with fluffy cake, juicy strawberrie, and creamy whipped layers, a sweet and refreshing treat.</p></i>
+      <br>
+      <u><h5> RM 16 </h5></u>
+    </div>
+  </div>
+
+  <div class="column sidedish">
+    <div class="content">
+    <img src="DISH 1.jpg" alt="Side Dishes" style="width:100%">
+      <h4> Chicken Burger </h4>
+      <br>
+      <i><p> A sandwich made with a cooked chicken patty, served on a bun with toppings like lettuce, tomato, cheese and sauces. </p></i>
+      <br>
+      <u><h5> RM 17 </h5></u>
+    </div>
+  </div>
+  <div class="column sidedish">
+    <div class="content">
+    <img src="DISH 2.jpg" alt="Side Dishes" style="width:100%">
+      <h4> Smash Beef Kick Burger </h4>
+      <br>
+      <i><p> A juicy smashed beef patty topped with spicy sauce, veggies, and melted cheese, served on a toasted bun for a flavorful. </p></i>
+      <br>
+      <u><h5> RM 19 </h5></u>
+    </div>
+  </div>
+  <div class="column sidedish">
+    <div class="content">
+    <img src="DISH 3.jpg" alt="Side Dishes" style="width:100%">
+      <h4> Fish Burger </h4>
+      <br>
+      <i><p> A crispy fish fillet served in a bun with fresh lettuce, tartar sauce, and cheese or pickles for a flavorful bite. </p></i>
+      <br>
+      <u><h5> RM 16 </h5></u>
+    </div>
+  </div>
+  <div class="column sidedish">
+    <div class="content">
+    <img src="DISH 4.jpg" alt="Side Dishes" style="width:100%">
+      <h4> Easy Turkey Beef Bolognese Spaghetti </h4>
+      <br>
+      <i><p> A hearty and flavorful spaghetti dish made with a rich tomato sauce, ground turkey and beef, seasoned with herbs and spices for a quick and satisfying meal. </p></i>
+      <br>
+      <u><h5> RM 16 </h5></u>
+    </div>
+  </div>
+  <div class="column sidedish">
+    <div class="content">
+    <img src="DISH 5.jpg" alt="Side Dishes" style="width:100%">
+      <h4> Baked Marsala Chicken Meatballs </h4>
+      <br>
+      <i><p> Juicy chicken meatballs baked to perfection and simmered in a rich Marsala wine sauce, combining savory and slightly sweet flavors for a comforting dish. </p></i>
+      <br>
+      <u><h5> RM 18 </h5></u>
+    </div>
+  </div>
+  <div class="column sidedish">
+    <div class="content">
+    <img src="DISH 6.jpg" alt="Side Dishes" style="width:100%">
+      <h4> Roasted Cherry-Tomato Sauce </h4>
+      <br>
+      <i><p> A flavorful sauce made by roasting sweet cherry tomatoes, often with garlic and herbs, creating a smoky, and slightly tangy taste perfect for pasta.</p></i>
+      <br>
+      <u><h5> RM 16 </h5></u>
+    </div>
+  </div>
+
+
+</div>
+
+
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+
+const images = document.querySelectorAll('img'); // Select all images
+
+images.forEach((img) => {
+  img.addEventListener('click', function () {
+    // Add shake class to the clicked image
+    this.classList.add('shake');
+    
+    setTimeout(() => {
+      this.classList.remove('shake');
+    }, 500);
+  });
+});
+
+
+</script>
+    
+
+</body>
+</html>

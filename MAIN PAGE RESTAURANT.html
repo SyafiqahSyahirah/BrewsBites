@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<title>BREWS & BITES</title>
+<link rel="stylesheet" href="MAINPAGERESTAURANT.css">
+
+<style>
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 251, 27, 0.836);
+    padding: 10px;
+  }
+
+  nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+
+  nav .menu {
+    display: flex;
+  }
+
+
+  nav .hamburger {
+    display: none;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    nav .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    nav .menu.active {
+      display: flex;
+    }
+
+    nav a {
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      border-top: 1px solid #444;
+    }
+
+    nav .hamburger {
+      display: block;
+    }
+  }
+</style>
+</head>
+<body>
+
+
+<nav>
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i> 
+  </div>
+  <div class="menu">
+    <a href="#ABOUTME">ABOUT US</a>
+    <a href="MENU.html">MENU</a>
+    <a href="RESERVATION.html">RESERVATION</a>
+    <a href="CONTACT US.html">CONTACT US</a>
+    <a href="OUR GALLERY.html">GALLERY</a>
+  </div>
+</nav>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>BREWS</h1>
+    <p>& BITES</p>
+    <img class="image" src="SPINNING COFFEE.jpg" alt="" width="120" height="120" usemap="#workmap">
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350"  href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/9-reasons-why-the-right-amount-of-coffee-is-good-for-you">
+    </map>
+  </div>
+</div>
+
+<section class="about-us" id="ABOUTME"> 
+<h2>About Us</h2>
+<p class="animate-on-scroll">
+Welcome to "Brews & Bites" — a place where passion for good food and drinks come together. We're a team dedicated to bringing you the finest culinary experiences, whether you're a fan of freshly brewed coffee or a lover of unique bites. Our mission is to create an inviting space where everyone can enjoy great flavors and create lasting memories with friends and family. All are invited especially coffee lover!
+</p>
+
+<a href="MEET OUR TEAM.html">
+<button class="team-button">Meet Our Team</button>
+</a>
+</section>
+
+<button class="accordion">Operation Hours</button>
+<div class="panel">
+  <p>10 a.m. until 11 p.m.</p>
+</div>
+<br>
+<button class="accordion">Operation Days</button>
+<div class="panel">
+  <p>Weekdays: Monday, Tuesday, Thursday & Friday.<br> Weekends: Saturday & Sunday. </p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<img src="cafe image 1.jpg" alt="Image 1">
+</div>
+
+<div class="mySlides fade">
+<img src="cafe image 2.jpg" alt="Image 2">
+</div>
+
+<div class="mySlides fade">
+<img src="cafe image 3.jpg" alt="Image 3">
+</div>
+
+<button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+<button class="next" onclick="plusSlides(1)">&#10095;</button>
+
+</div>
+
+<section class="customer-reviews">
+<h2>Customer Reviews</h2>
+<div class="review-container">
+<div class="review">
+<p>"I rarely get to eat Chocolate Cromboloni due to my dietary restrictions. Thank you from the bottom of my heart! Everything we had was absolutely delicious and made with so much love."</p>
+<span>- natasya nazira</span>
+</div>
+<div class="review">
+<p>"Amazing coffee and delightful bites! A perfect spot for brunch with friends."</p>
+<span>- umairah batrisyia</span>
+</div>
+<div class="review">
+<p>"Had a wonderful time here. The team is friendly, and the food is always fresh and delicious."</p>
+<span>- hakimie zaid</span>
+</div>
+</div>
+<a href="CUSTOMER REVIEW.html">
+<button class="team-button">Leave Your Review Here</button>
+</a>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+<p><sup>&copy;</sup> 2024 Brews & Bites. All rights <sub>reserved.</sub></p>
+<p>Designed with ❤️ | <a href="https://www.instagram.com/syaherahh/" target="_blank">Visit Our Instagram</a></p>
+</footer>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px"; 
+    } 
+  });
+}
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("mySlides");
+  
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  
+  slideIndex++;
+  
+  if (slideIndex > slides.length) {
+    slideIndex = 1; 
+  }
+  
+  slides[slideIndex - 1].style.display = "block"; 
+  
+  setTimeout(showSlides, 2000); 
+}
+
+function plusSlides(n) {
+  slideIndex += n;
+  showSlides();
+}
+
+
+const animateOnScroll = () => {
+  const elements = document.querySelectorAll('.animate-on-scroll');
+  elements.forEach(element => {
+    const elementPosition = element.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight;
+    if (elementPosition < screenPosition) {
+      element.classList.add('animate-visible');
+      element.style.opacity = 1; 
+    }
+  });
+};
+
+animateOnScroll();
+window.addEventListener('scroll', animateOnScroll);
+
+
+function toggleMenu() {
+  const menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
+}
+
+
+</script>
+
+</body>
+</html>

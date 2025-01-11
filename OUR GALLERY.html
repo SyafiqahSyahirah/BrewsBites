@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>OUR GALLERY</title>
+        <link rel="stylesheet" href="OURGALLERY.css">
+        </head>
+  
+    </head>
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:  rgba(255, 251, 27, 0.836);
+        padding: 10px;
+      }
+    
+      nav a {
+        color: black;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+      }
+    
+      nav .menu {
+        display: flex;
+      }
+
+      nav .hamburger {
+        display: none;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 768px) {
+        nav .menu {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          margin-top: 10px;
+        }
+    
+        nav .menu.active {
+          display: flex;
+        }
+    
+        nav a {
+          padding: 10px;
+          text-align: center;
+          width: 100%;
+          border-top: 1px solid #444;
+        }
+    
+        nav .hamburger {
+          display: block;
+        }
+      }
+    </style>
+    </head>
+    
+    <body>
+    
+      <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i> 
+        </div>
+        <div class="menu">
+          <a href="MAIN PAGE RESTAURANT.html">ABOUT US</a>
+          <a href="MENU.html">MENU</a>
+          <a href="RESERVATION.html">RESERVATION</a>
+          <a href="CONTACT US.html">CONTACT US</a>
+          <a href="OUR GALLERY.html">GALLERY</a>
+        </div>
+      </nav>
+            <br>
+            <br>
+            <br>
+
+<div class="header">
+  <h1> <marquee>GALLERY OF BREWS & BITES</h1><img src="kopi.gif" style="width:100px;height:100px;"></marquee>
+  <p>Explore the beautiful moments at our cafe</p>
+</div>
+<div style="text-align: center;">
+  <div class="audio-container">
+    <audio controls autoplay>
+        <source src="CAFESONG.mp3">
+    </audio>
+  </div>
+    <br><br>
+    <div class="video-container">
+      <video controls>
+          <source src="cafee.mp4" type="video/mp4">
+      </video>
+  </div>
+    </div>
+    <br>
+
+<div class="row">
+    <div class="column">
+      <div class="container">
+        <img src="CAFE5.jpg" alt="CAFE5">
+        <div class="overlay">
+          <div class="text">Combination coffee with brownie</div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <img src="CAFE1.jpg" alt="CAFE1">
+        <div class="overlay">
+          <div class="text">Serve latte</div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <img src="CAFE2.jpg" alt="CAFE2">
+        <div class="overlay">
+          <div class="text">Cafe Quotes</div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <img src="CAFE3.jpg" alt="CAFE3" style="width: 100%;">
+        <div class="overlay">
+          <div class="text">Trying our pasta</div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="column">
+      <div class="container">
+        <img src="CAFE4.jpg" alt="CAFE4">
+        <div class="overlay">
+          <div class="text">Let coffee connect us</div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <img src="CAFE6.jpg" alt="CAFE6">
+        <div class="overlay">
+          <div class="text">View from upstairs ⛾ </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <img src="CAFE11.jpg" alt="CAFE11">
+        <div class="overlay">
+          <div class="text">Coffee art 𓍢ִ໋☕️✧˚ ༘ ⋆</div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <img src="CAFE21.jpg" alt="CAFE10">
+        <div class="overlay">
+          <div class="text">Our signboard in front of the cafe </div>
+        </div>
+      </div>
+    </div>  
+    <br>
+    <div class="column">
+      <div class="container">
+        <img src="CAFE8.jpg" alt="CAFE8">
+        <div class="overlay">
+          <div class="text"> Matcha Matcham with buddies </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <img src="CAFE14.jpg" alt="CAFE10">
+        <div class="overlay">
+          <div class="text"> Breakie breakie ꒰ᐢ. .ᐢ꒱</div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <img src="CAFE9.jpg" alt="CAFE9">
+        <div class="overlay">
+          <div class="text"> Outfit Check </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <img src="CAFE16.jpg" alt="CAFE16">
+        <div class="overlay">
+          <div class="text"> Our Burger</div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="column">
+      <div class="container">
+        <img src="CAFE7.jpg" alt="CAFE7">
+        <div class="overlay">
+          <div class="text"> Enjoying Teeramis U </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <img src="CAFE12.jpg" alt="CAFE12">
+        <div class="overlay">
+          <div class="text">Coffee in the Morning</div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <img src="CAFE10.jpg" alt="CAFE10" style="width: 100%;">
+        <div class="overlay">
+          <div class="text">Front desk interior </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <img src="CAFE22.jpg" alt="CAFE17" style="height: 450px;">
+        <div class="overlay">
+          <div class="text">Coffee day</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+  </script>
+  
+  </body>
+  </html>

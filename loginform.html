@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css">
+    <title>Login</title>
+
+</head>
+<body>
+
+    <div class="loader"></div>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <p>Welcome back! Please enter your details.</p>
+
+        <form onsubmit="return handleLogin(event)">
+            <input type="email" name="email" class="input-field" placeholder="E-mail" required>
+            <input type="password" name="password" class="input-field" placeholder="Password" required>
+            <select name="membership" class="input-field" required>
+                <option value="" selected>Select Membership</option>
+                <option value="guest">Guest</option>
+                <option value="standard">Standard</option>
+                <option value="premium">Premium</option>
+            </select>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+
+    <div id="notification" class="notification">
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.querySelector('.loader').style.display = 'none';
+            document.querySelector('.login-container').style.display = 'block';
+        }, 3000);
+
+        function handleLogin(event) {
+            event.preventDefault();
+            const membership = document.querySelector('select[name="membership"]').value;
+            const notification = document.getElementById('notification');
+
+            if (membership === 'guest') {
+                notification.innerText = 'Welcome, Guest! Enjoy your meals ><';
+            } else if (membership === 'standard') {
+                notification.innerText = 'CONGRATULATIONS! you win a 15% voucher';
+            } else if (membership === 'premium') {
+                notification.innerText = 'CONGRATULATIONS! you win a 30% voucher ';
+            }
+
+            notification.style.display = 'block';
+            setTimeout(() => {
+                notification.style.display = 'none';
+                window.location.href = "MAIN PAGE RESTAURANT.html";
+            }, 3000);
+        }
+    </script>

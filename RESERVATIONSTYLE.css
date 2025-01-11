@@ -1,0 +1,193 @@
+
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1453614512568-c4024d13c247?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhZmV8ZW58MHx8MHx8fDA%3D');
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin: 0; 
+    }
+
+    .alert {
+        padding: 20px;
+        background-color: red;
+        color: white;
+        font-family: candara;
+        font-size: 20px;
+      }
+      
+      .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 25px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      .closebtn:hover {
+        color: black;
+      }
+
+
+h1 {
+    font-family: impact;
+    font-size: 40px;
+    background-color: rgba(255, 253, 152, 0.836);
+    padding: 15px 650px; /* Kawal ruang di atas, bawah, kiri, dan kanan teks */
+    text-align: center;
+    overflow: hidden;
+    animation: typewriter 2s steps(13) infinite alternate,
+      blink 800ms steps(13) infinite normal;
+    border-right: 5px solid black;
+    }
+
+    .typewriter {
+        display: inline-block;
+        border-right: 3px solid black;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 3.5s steps(30) 1s forwards, blink 0.75s step-end infinite;
+    }
+    
+    @keyframes typing {
+        to {
+            width: 100%;
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+.container {
+    width: 500px;
+    padding: 20px;
+    background-color: rgba(255, 253, 152, 0.836);
+    border-radius: 8px;
+    margin-top: 20px; /* Memberi ruang antara h1 dan container */
+    text-align: center;
+    }
+
+
+.form-input {
+    margin-bottom: 11px;
+    font-family: candara;
+    font-size: 16px;
+    }
+
+.form-input label {
+    display: block;
+   margin-bottom: 5px;
+   font-family: candara;
+    font-size: 16px;
+    }
+
+.form-input input,
+.form-input select {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid rgba(255, 251, 27, 0.836);
+    border-radius: 5px;
+    font-family: candara;
+    font-size: 16px;
+    }
+
+.btn button {
+    cursor: pointer;
+    background-color: rgba(255, 251, 27, 0.836);
+    transition: background-color 0.4s ease;
+    color: #040404;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 3px;
+    font-size: 12px;
+    }
+
+.btn button:hover {
+    background-color: rgba(255, 251, 27, 0.836);
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    color: #040404;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 3px;
+    font-size: 12px;
+    }
+
+.delete-btn {
+    cursor: pointer;
+    background-color: rgba(255, 251, 27, 0.836);
+    transition: background-color 0.4s ease;
+    color: #040404;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 3px;
+    font-family: impact;
+    font-size: 18px;
+    }
+
+.delete-btn:hover {
+    background-color: rgba(255, 251, 27, 0.836);
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    color: #040404;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 3px;
+    font-size: 12px;
+    }
+
+.menu-Cart {
+    border: 3px solid rgba(255, 251, 27, 0.836);
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-family: candara;
+    font-size: 16px;
+    }
+
+.menu-cart h2 {
+    margin: 0;
+    }
+
+.menu-cart p {
+    margin: 5px 0;
+    }
+
+    nav {
+        background-color: rgba(255, 251, 27, 0.836);
+        display: flex; /* Use flexbox for proper alignment */
+        justify-content: flex-end; /* Align items to the right */
+        align-items: center; /* Center the links vertically */
+        padding: 3px; /* Add padding for better spacing */
+        position: relative; /* Ensure it sits above other elements */
+        z-index: 5; /* Ensure the navigation stays on top of the hero image */
+        width: 100%; 
+        position:static;
+        top: 0;
+        left: 0;
+      
+      }
+  
+  nav a {
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-family: impact;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: white;
+    color: rgb(109, 106, 106);
+    text-decoration: none;
+  }
