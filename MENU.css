@@ -30,7 +30,7 @@ font-family: Arial;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);  
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 
@@ -47,6 +47,7 @@ font-family: Arial;
 
 .menu-container:hover {
   background-color: rgba(255, 255, 0, 0.288);
+    margin-top: 20px;
   }
 
 ol {
