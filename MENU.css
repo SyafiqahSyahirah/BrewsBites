@@ -33,7 +33,7 @@ font-family: Arial;
   margin-top: 70px;
 }
 
-/* Additional styling */
+
 .menu-container h1 {
   font-size: 2em;
   margin-bottom: 10px;
@@ -103,7 +103,7 @@ h1 {
   font-size: 50px;
   word-break: break-all;
   font-family: Impact;
-  padding-top: 80px; /* Memberi jarak yang lebih besar dari navbar */
+  padding-top: 80px; 
 }
 
 h2 {
@@ -113,6 +113,7 @@ overflow: hidden;
 animation: typewriter 2s steps(13) infinite alternate,
   blink 800ms steps(13) infinite normal;
 border-right: 5px solid black;
+margin-bottom: 10%;
 }
 
 h3 {
